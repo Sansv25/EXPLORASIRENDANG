@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorasi Rendang </title>
+    <link href="src/output.css" rel="stylesheet">
+    <!-- <link href="node_modules/aos/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module">
+        import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+        
+        new DotLottie({
+            autoplay: true,
+            loop: true,
+            canvas: document.getElementById("cow"),
+            src: "https://lottie.host/d85eab8d-9efc-437f-b207-1adcb0f2f1de/VOuiBZKvsh.lottie", // or .json file
+        });
+        new DotLottie({
+            autoplay: true,
+            loop: true,
+            canvas: document.getElementById("idea"),
+            src: "https://lottie.host/8230c49e-94ff-4e07-87ff-8988db8ff7dd/HAlKsEl0SD.lottie", // or .json file
+        });
+        </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        blink: "blink 1s steps(2, start) infinite",
+                        float: "float 3s ease-in-out infinite",
+                    },
+                    keyframes: {
+                        blink: { "50%": { opacity: "0" } },
+                        float: {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-5px)" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate-animation {
+            animation: rotate 15s linear infinite;
+        }
+        @media (min-width: 40rem) {
+            .aos-element[data-aos="fade-left"],
+            .aos-element[data-aos="fade-right"] {
+                transition: none;
+            }
+        }
+        .fade {
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+
+        .fade.visible {
+            opacity: 1;
+        }
+    </style>
+
+<body
+    class="overflow-y-hidden overflow-x-hidden bg-orange-100 [&::-webkit-scrollbar]:w-[4px] [&::-webkit-scrollbar-track]:bg-amber-100 [&::-webkit-scrollbar-thumb]:bg-amber-100 dark:[&::-webkit-scrollbar-track]:bg-neutral-700">
+    <div id="welcome-screen"
+        class="fixed inset-0 bg-gradient-to-r from-[#4E342E] to-[#D84315] flex items-center justify-center z-50">
+        <div class="relative min-h-screen flex items-center justify-center px-4">
+            <div class="w-full max-w-4xl mx-auto">
+                <!-- Icons -->
+                <div class="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-1 md:mb-12">
+                    <div class="relative group hover:scale-110 transition-transform duration-300" data-aos="fade-down"
+                        data-aos-delay="1000">
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-[#FFC107] to-[#FFC107] rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300">
+                        </div>
+                        <div class="relative p-3 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
+                            <img src="asset/logoti.png" class="w-[12vw] h-[12vw] lg:w-20 lg:h-20 object-contain" alt="Logo TI">
+                        </div>
+                    </div>
+                    <div class="relative group hover:scale-110 transition-transform duration-300" data-aos="fade-down"
+                        data-aos-delay="1400">
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-[#FFC107] to-[#FFC107] rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300">
+                        </div>
+                        <div class="relative p-3 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
+                            <img src="asset/garuda-pancasila.png" class="w-[12vw] h-[12vw] lg:w-20 lg:h-20 object-contain"
+                                alt="Logo OSIS">
+                        </div>
+                    </div>
+                    <div class="relative group hover:scale-110 transition-transform duration-300" data-aos="fade-down"
+                        data-aos-delay="1400">
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-[#FFC107] to-[#FFC107] rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300">
+                        </div>
+                        <div class="relative p-3 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
+                            <img src="asset/logoosis.png" class="w-[12vw] h-[12vw] lg:w-20 lg:h-20 object-contain"
+                                alt="Logo OSIS">
+                        </div>
+                    </div>
+                </div>
+                <!-- Welcome Text -->
+                <div class="text-center mb-1 md:mb-12">
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-6xl font-bold space-y-2 sm:space-y-4 leading-tight md:leading-snug">
+                        <div class="mb-2 sm:mb-4">
+                            <span data-aos="fade-right" data-aos-delay="1200"
+                                class="inline-block px-2 bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
+                                Selamat
+                            </span>
+                            <span data-aos="fade-right" data-aos-delay="1400"
+                                class="inline-block px-2 bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
+                                Datang
+                            </span>
+                            <span data-aos="fade-right" data-aos-delay="1600"
+                                class="inline-block px-2 bg-gradient-to-r from-white via-white to-white bg-clip-text text-transparent">
+                                Di
+                            </span>
+                        </div>
+                        <div>
+                            <span data-aos="fade-up" data-aos-delay="1800"
+                                class="inline-block px-2 bg-gradient-to-r from-[#FFC107] to-[#FFC107] bg-clip-text text-transparent">
+                                Eksplorasi
+                            </span>
+                            <span data-aos="fade-up" data-aos-delay="2000"
+                                class="inline-block px-2 bg-gradient-to-r from-[#FFC107] to-[#FFC107] bg-clip-text text-transparent">
+                                Rendang
+                            </span>
+                        </div>
+                    </h1>
+                </div>
+                <!-- Website Link -->
+                <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="1200">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
+                        target="_blank" rel="noopener noreferrer">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#FFC107]/20 to-[#FFC107]/20 rounded-full blur-md group-hover:blur-lg transition-all duration-300">
+                        </div>
+                        <div class="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
+                            <h3 id="welcome-info"
+                                class="bg-gradient-to-r from-[#FFC107] to-[#FFC107] bg-clip-text text-transparent">
+                                <!-- typing effect -->
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="w-full absolute top-0 z-1 transition-all duration-500 bg-[#030014] backdrop-blur-xl">
+        <div class="mx-auto px-4 sm:px-6 lg:px-[10%]">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#Home"
+                        class="text-xl font-bold bg-gradient-to-t from-[#ffffff] to-[#D52B1E] bg-clip-text text-transparent">EXPLORASI-RENDANG</a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-8 flex items-center space-x-8">
+                        <a href="#pendahuluan"     class="group relative px-1 py-2 text-sm font-medium">
+                            <span
+                                class="relative z-10 text-[#e2d3fd] group-hover:text-white transition-colors duration-300">
+                                Pendahuluan
+                            </span>
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#FF4500] to-[#FF6347] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                            </span>
+                        </a>
+                        <a href="#faktaunik" class="group relative px-1 py-2 text-sm font-medium">
+                            <span
+                                class="relative z-10 text-[#e2d3fd] group-hover:text-white transition-colors duration-300">
+                                Fakta-Unik
+                            </span>
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#FF4500] to-[#FF6347] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                            </span>
+                        </a>
+                        <a href="#kesimpulan" class="group relative px-1 py-2 text-sm font-medium">
+                            <span
+                                class="relative z-10 text-[#e2d3fd] group-hover:text-white transition-colors duration-300">
+                                kesimpulan
+                            </span>
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#FF4500] to-[#FF6347] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()"
+                        class="p-2 text-[#ffffff] hover:text-orange-500 transition-transform duration-300 ease-in-out">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu Dropdown -->
+                    <div id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-[#030014] backdrop-blur-xl">
+                        <div class="px-4 py-2 space-y-3">
+                            <a href="#pendahuluan"
+                                class="block px-3 py-2 text-[#ffffff] hover:text-orange-500 transition-colors duration-300">
+                                Pendahuluan
+                            </a>
+                            <a href="#faktaunik"
+                                class="block px-3 py-2 text-[#ffffff] hover:text-orange-500 transition-colors duration-300">
+                                Fakta-Unik
+                            </a>
+                            <a href="#kesimpulan"
+                                class="block px-3 py-2 text-[#ffffff] hover:text-orange-500 transition-colors duration-300">
+                                kesimpulan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-10 pt-[7vh] md:pt-[20vh] lg:pt-0">
+
+        <!-- Kiri -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+            <!-- Status Badge -->
+            <div class="inline-block animate-float" data-aos="fade-right">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-0.5 bg-red-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000">
+                    </div>
+                    <div class="relative px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
+                        <span class="bg-white text-transparent bg-clip-text text-sm font-medium flex items-center">
+                            Makanan Legendaris indonesia
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-3xl lg:text-6xl font-bold tracking-tight flex sm:flex-col gap-[2.5%] justify-center">
+                <span class="relative inline-block text-glow">
+                    <span class="relative bg-white bg-clip-text text-transparent">
+                        EXPLORASI
+                    </span>
+                </span>
+                <span class="relative inline-block mt-0 lg:mt-2 text-glow">
+                    <span class="relative bg-gradient-to-r from-[#FF4500] to-[#FF6347] bg-clip-text text-transparent">
+                        RENDANG
+                    </span>
+                </span>
+            </h1>
+
+
+            <!-- Typing Effect -->
+            <div class="h-8 flex items-center justify-center lg:justify-start">
+                <span id="typing-text"
+                    class="text-xl md:text-2xl bg-gradient-to-r from-[#D84315] to-[#eb592d] bg-clip-text text-transparent font-medium"></span>
+                <span class="w-[3px] h-6 bg-gradient-to-t from-[#fa6b0b] to-[#f35a01] ml-1 animate-blink"></span>
+            </div>
+
+            <!-- Description -->
+            <div class="flex justify-center lg:justify-normal">
+                <p class="text-[1.7vh] lg:text-xl text-black max-w-[85%] lg:max-w-[400px] leading-relaxed font-light">
+                    Rendang bukan hanya sekadar makanan, tetapi juga bagian dari warisan budaya Minangkabau yang
+                    memiliki filosofi mendalam.
+                </p>
+            </div>
+
+
+            <!-- Tech Stack -->
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <div class="w-[10vh] h-[10vh] overflow-hidden">
+                    <img src="asset/logoti.png" class="w-full h-full p-3 object-contain">
+                </div>
+                <div class="w-[10vh] h-[10vh] overflow-hidden">
+                    <img src="asset/garuda-pancasila.png" class="w-full h-full p-3 object-contain">
+                </div>
+                <div class="w-[10vh] h-[10vh] overflow-hidden">
+                    <img src="asset/logoosis.png" class="w-full h-full p-3 object-contain">
+                </div>
+            </div>
+            <!-- CTA Buttons -->
+            <div class="flex flex-row gap-3 w-full justify-center lg:justify-start mt-4">
+                <a href="#Portofolio"
+                    class="relative text-[3vw] py-1.5 px-3 lg:text-2xl flex items-center justify-center bg-orange-200 hover:bg-gradient-to-r hover:from-[#fa6b0b] to-[#f35a01] rounded-lg border border-white/10 text-white font-medium transition duration-300">
+                    <img src="asset/instagram.png" alt="Instagram" class="w-6 h-6 mr-2">KELAS
+                </a>
+                <a href="#Contact"
+                    class="relative text-[3vw] lg:text-2xl py-1.5 px-3 flex items-center justify-center bg-orange-200 hover:bg-gradient-to-r hover:from-[#fa6b0b] to-[#f35a01] rounded-lg border border-white/10 text-white font-medium transition duration-300">
+                    <img src="asset/instagram.png" alt="Instagram" class="w-6 h-6 mr-2">DEVELOPER
+                </a>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <canvas id="cow" class="-z-3 w-auto h-[110%] lg:w-[600px] lg:h-[600px]"></canvas>
+        </div>
+    </div>
+    <div id="pendahuluan" class="container mx-auto flex flex-col items-center justify-center pb-40 gap-10 pt-72 lg:pt-0">
+        <!-- Judul Utama - Centered -->
+        <div class="text-center w-full lg:mb-16">
+            <div class="inline-block relative group">
+                <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text leading-tight bg-gradient-to-r from-[#D84315] to-[#eb592d]"
+                    data-aos="fade-left" data-aos-duration="600">
+                    pendahuluan
+                </h2>
+            </div>
+            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-left"
+                data-aos-duration="800">
+                Pengertian, Pengakuan internasional & Filosofi Rendang
+            </p>
+        </div>
+    
+        <!-- Content Section -->
+        <div class="w-full flex flex-col lg:flex-row justify-between gap-8">
+            <!-- Image on the left -->
+            <div class="w-full lg:w-[55%] flex justify-center lg:justify-start" data-aos="fade-right" data-aos-delay="500">
+                <img src="asset/rendang.png"
+                    class="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-lg rotate-animation">
+            </div>
+    
+            <!-- Text content on the right -->
+            <div class="w-full lg:w-[45%] flex flex-col items-center h-full text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
+                    Pengertian Rendang
+                </h3>                
+                <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+                    Rendang adalah masakan khas Minangkabau (Sumatera Barat, Indonesia) yang terdiri dari daging sapi yang dimasak perlahan dengan santan dan berbagai rempah-rempah hingga menghasilkan cita rasa yang kaya dan tekstur yang empuk. Proses memasaknya yang lama, biasanya 4-6 jam dengan api kecil, membuat rendang memiliki warna cokelat kehitaman dan tekstur yang kering.
+                </p>
+                <p class="text-black max-w-xl text-lg lg:text-2xl" data-aos="fade-left" data-aos-duration="1000">
+                    Rendang tidak hanya dikenal karena kelezatannya, tetapi juga karena daya tahannya yang lama. Jika dimasak hingga kering, rendang bisa bertahan selama berminggu-minggu bahkan berbulan-bulan tanpa bahan pengawet.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-40 gap-10 pt-72 lg:pt-0">
+        <div class="w-full lg:w-1/2 flex flex-col items-center h-full text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
+                Pengakuan Internasional Rendang
+            </h3>                
+            <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+                Rendang telah mendapatkan pengakuan sebagai salah satu makanan terenak di dunia. Beberapa penghargaan dan pengakuan internasional yang diraih rendang antara lain:
+            </p>
+            <ul class="text-black list-inside list-decimal max-w-xl text-start text-lg lg:text-2xl mb-8 pl-5" data-aos="fade-left" data-aos-duration="1000">
+                <li>CNN Travel menobatkan rendang sebagai makanan terenak di dunia pada tahun 2011 dan 2017 dalam daftar World’s 50 Best Foods.</li><br>
+                <li>Rendang sering muncul dalam berbagai festival kuliner internasional.</li><br>
+                <li>Menjadi menu andalan di banyak restoran Indonesia di luar negeri.</li><br>
+                <li>Karena popularitasnya, rendang juga telah diadaptasi dalam berbagai versi di Malaysia, Singapura, dan negara-negara lainnya.</li>
+            </ul>                 
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <div class="grid grid-cols-5 grid-rows-6 gap-1 lg:gap-4 w-[80%] h-[85vw] lg:w-[25vw] lg:h-[50vh]">
+                <div class="col-span-3 row-span-2 flex items-center justify-center">
+                    <img src="asset/masakrendang.jpg" class="object-cover w-full h-full" data-aos="fade-right" data-aos-duration="600">
+                </div>
+                <div class="col-span-3 row-span-2 col-start-3 row-start-3 flex items-center justify-center">
+                    <img src="asset/masakrendang1.jpg" class="object-cover w-full h-full" data-aos="fade-left" data-aos-duration="600">
+                </div>
+                <div class="col-span-2 row-span-2 col-start-1 row-start-3 flex items-center justify-center">
+                    <img src="asset/masakrendang2.jpg" class="object-cover w-full h-full" data-aos="fade-right" data-aos-duration="600">
+                </div>
+                <div class="col-span-2 row-span-2 col-start-4 row-start-5 flex items-center justify-center">
+                    <img src="asset/masakrendang5.jpg" class="object-cover w-full h-full" data-aos="fade-left" data-aos-duration="600">
+                </div>
+                <div class="col-span-3 row-span-2 col-start-1 row-start-5 flex items-center justify-center">
+                    <img src="asset/masakrendang4.jpg" class="object-cover w-full h-full" data-aos="fade-right" data-aos-duration="600">
+                </div>
+                <div class="col-span-2 row-span-2 col-start-4 row-start-1 flex items-center justify-center">
+                    <img src="asset/masakrendang3.jpg" class="object-cover w-full h-full" data-aos="fade-left" data-aos-duration="600">
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center pb-40 gap-10 pt-72 lg:pt-0">
+        <div class="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <div class="p-4 rounded-sm shadow-lg h-72 w-96 lg:h-92 lg:w-146 overflow-hidden" data-aos="fade-right" data-aos-duration="600">
+                <img id="filosofi" class="object-cover w-full h-full fade" src="" alt="Foto">
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-col items-center h-full text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
+                Filosofi Rendang dalam Masyarakat Minangkabau
+            </h3>                
+            <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+                Rendang bukan sekadar makanan, tetapi juga mencerminkan nilai-nilai sosial Minangkabau:
+            </p>
+            <ul class="text-black list-inside text-start list-decimal max-w-xl text-lg lg:text-2xl mb-8 " data-aos="fade-left" data-aos-duration="1000">
+                <li>Daging sapi → Melambangkan pemimpin adat.</li>
+                <li>Santan → Melambangkan kaum cendekiawan.</li>
+                <li>Cabai → Melambangkan ulama.</li>
+                <li>Rempah-rempah → Melambangkan masyarakat umum.</li>
+            </ul>
+        </div>
+    </div>
+    <div id="pendahuluan" class="container mx-auto flex flex-col items-center justify-center pb-40 gap-0 pt-72 lg:pt-0">
+        <!-- Judul Utama - Centered -->
+        <div class="text-center w-full lg:mb-16">
+            <div class="inline-block relative group">
+                <h2 id="faktaunik" class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text leading-tight bg-gradient-to-r from-[#D84315] to-[#eb592d]"
+                    data-aos="fade-up" data-aos-duration="600">
+                    Fakta Unik
+                </h2>
+            </div>
+            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-up"
+                data-aos-duration="800">
+                Fakta fakta Unik tentang Rendang yang mungkin baru kamu tahu.
+            </p>
+        </div>
+    
+        <!-- Content Section -->
+        <div class="w-full flex flex-col justify-between">
+            <!-- Image on the left -->
+            <div class="w-full flex justify-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-center">
+                <canvas id="idea" class="-z-3 w-82 h-82 lg:w-[600px] lg:h-[600px]"></canvas>
+            </div>
+    
+            <!-- Text content on the right -->
+            <div class="w-full flex flex-col items-center h-full text-center">             
+                <ul class="text-black list-inside text-start list-decimal max-w-xl lg:max-w-6xl text-lg lg:text-2xl mb-8 ">
+                <li data-aos="fade-up" data-aos-duration="1000">Rendang Menjadi Makanan Terlezat di Dunia: Rendang dinobatkan sebagai makanan terlezat di dunia oleh CNN Travel dalam jajak pendapat "World’s 50 Best Foods" tahun 2011 dan 2017.</li><br>
+                <li data-aos="fade-up" data-aos-duration="1000">Rendang Membutuhkan Proses Memasak yang Panjang: Pembuatan rendang membutuhkan waktu 4–6 jam agar bumbu benar-benar meresap dan daging menjadi empuk dengan tekstur kering khas rendang asli</li><br>
+                <li data-aos="fade-up" data-aos-duration="1000">Rendang Memiliki Daya Tahan yang Luar Biasa: Karena dimasak dalam waktu yang lama hingga bumbu meresap sempurna, rendang bisa bertahan hingga berminggu-minggu bahkan berbulan-bulan tanpa bahan pengawet, jika disimpan dengan baik.</li><br>
+                <li data-aos="fade-up" data-aos-duration="1000">Rendang Menjadi Makanan Populer di Mancanegara: Rendang kini menjadi makanan global yang bisa ditemukan di berbagai restoran Indonesia di luar negeri, seperti di Malaysia, Singapura, Belanda, dan Amerika Serikat.</li><br>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pendahuluan" class="container mx-auto flex flex-col items-center justify-center pb-40 gap-0 pt-72 lg:pt-0">
+        <!-- Judul Utama - Centered -->
+        <div class="text-center w-full lg:mb-16">
+            <div class="inline-block relative group">
+                <h2 id="kesimpulan" class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text leading-tight bg-gradient-to-r from-[#D84315] to-[#eb592d]"
+                    data-aos="fade-up" data-aos-duration="600">
+                    Kesimpulan
+                </h2>
+            </div>
+            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-up"
+                data-aos-duration="800">
+                Terimakasih Sudah Mengunjungi Website Explorasi Rendang
+            </p>
+        </div>
+    
+        <!-- Content Section -->
+        <div class="w-full flex flex-col justify-between">
+            <div class="w-full flex flex-col items-center h-full text-center">             
+                <p class="text-black list-inside list-decimal max-w-xl lg:max-w-6xl text-lg lg:text-2xl mb-8 " data-aos="fade-up" data-aos-duration="1000">
+                    Rendang bukan hanya sekadar makanan lezat, tetapi juga bagian dari budaya Minangkabau yang sarat makna. Proses memasaknya yang unik, penggunaan rempah-rempah, serta daya tahannya yang lama menjadikan rendang sebagai ikon kuliner Indonesia yang mendunia.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="background-blob" class="fixed inset-0 hidden -z-2">
+        <div class="absolute inset-0">
+            <div id="blob1"
+                class="absolute top-0 -left-4 w-[30vw] h-[30vh] bg-[#FFCC00] rounded-full mix-blend-multiply filter blur-[128px] opacity-30 transition-transform duration-300 ease-out hidden sm:block">
+            </div>
+        </div>
+        <div id="blob2"
+            class="absolute top-0 -right-4 w-[30vw] h-[30vh] bg-[#FF6600] rounded-full mix-blend-multiply filter blur-[128px] opacity-30 transition-transform duration-300 ease-out">
+        </div>
+        <div id="blob3"
+            class="absolute -bottom-8 left-[-40%] md:left-20 w-[30vw] h-[30vh] bg-[#FF6600] rounded-full mix-blend-multiply filter blur-[128px] opacity-30 transition-transform duration-300 ease-out hidden sm:block">
+        </div>
+        <div id="blob4"
+            class="absolute -bottom-10 right-20 w-[30vw] h-[30vh] bg-[#FFCC00] rounded-full mix-blend-multiply filter blur-[128px] opacity-30 transition-transform duration-300 ease-out">
+        </div>
+    </div>
+    <div id="grid"
+        class="-z-10 inset-0 bg-[linear-gradient(to_right,#4f4f4f10_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f10_1px,transparent_1px)] bg-[size:24px_24px]">
+    </div>
+    <script src="aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
