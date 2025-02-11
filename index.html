@@ -5,43 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eksplorasi Rendang </title>
-    <link href="output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <!-- <link href="node_modules/aos/dist/aos.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script type="module">
-        import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
-        
-        new DotLottie({
-            autoplay: true,
-            loop: true,
-            canvas: document.getElementById("cow"),
-            src: "https://lottie.host/d85eab8d-9efc-437f-b207-1adcb0f2f1de/VOuiBZKvsh.lottie", // or .json file
-        });
-        new DotLottie({
-            autoplay: true,
-            loop: true,
-            canvas: document.getElementById("idea"),
-            src: "https://lottie.host/8230c49e-94ff-4e07-87ff-8988db8ff7dd/HAlKsEl0SD.lottie", // or .json file
-        });
-        </script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        blink: "blink 1s steps(2, start) infinite",
-                        float: "float 3s ease-in-out infinite",
-                    },
-                    keyframes: {
-                        blink: { "50%": { opacity: "0" } },
-                        float: {
-                            "0%, 100%": { transform: "translateY(0)" },
-                            "50%": { transform: "translateY(-5px)" }
-                        }
-                    }
-                }
-            }
-        };
-    </script>
     <style>
         @keyframes rotate {
             from {
@@ -232,7 +199,7 @@
         </div>
     </nav>
     <div
-        class="container mx-auto flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-10 pt-[7vh] md:pt-[20vh] lg:pt-0">
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 lg:gap-10 pt-[7vh] md:pt-[20vh] lg:pt-0">
 
         <!-- Kiri -->
         <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6">
@@ -306,7 +273,7 @@
             </div>
         </div>
         <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-            <canvas id="cow" class="-z-3 w-auto h-[110%] lg:w-[600px] lg:h-[600px]"></canvas>
+            <canvas id="cow" class="-z-3 w-[35vh] h-[35vh] lg:w-[600px] lg:h-[600px]"></canvas>
         </div>
     </div>
     <div id="pendahuluan" class="container mx-auto flex flex-col items-center justify-center pb-40 gap-10 pt-72 lg:pt-0">
@@ -483,5 +450,40 @@
     </div>
     <script src="aos.js"></script>
     <script src="main.js"></script>
+    <script type="module">
+        import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+        
+        new DotLottie({
+            autoplay: true,
+            loop: true,
+            canvas: document.getElementById("cow"),
+            src: "https://lottie.host/d85eab8d-9efc-437f-b207-1adcb0f2f1de/VOuiBZKvsh.lottie", // or .json file
+        });
+        new DotLottie({
+            autoplay: true,
+            loop: true,
+            canvas: document.getElementById("idea"),
+            src: "https://lottie.host/8230c49e-94ff-4e07-87ff-8988db8ff7dd/HAlKsEl0SD.lottie", // or .json file
+        });
+        </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        blink: "blink 1s steps(2, start) infinite",
+                        float: "float 3s ease-in-out infinite",
+                    },
+                    keyframes: {
+                        blink: { "50%": { opacity: "0" } },
+                        float: {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-5px)" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
 </body>
 </html>
