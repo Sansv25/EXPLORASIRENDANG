@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eksplorasi Rendang </title>
-    <link href="output.css" rel="stylesheet">
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <!-- <link href="node_modules/aos/dist/aos.css" rel="stylesheet"> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="aos.css" rel="stylesheet">
     <style>
         @keyframes rotate {
             from {
@@ -38,7 +36,6 @@
             opacity: 1;
         }
     </style>
-
 <body
     class="overflow-y-hidden overflow-x-hidden bg-orange-100 [&::-webkit-scrollbar]:w-[4px] [&::-webkit-scrollbar-track]:bg-amber-100 [&::-webkit-scrollbar-thumb]:bg-amber-100 dark:[&::-webkit-scrollbar-track]:bg-neutral-700">
     <div id="welcome-screen"
@@ -199,7 +196,7 @@
         </div>
     </nav>
     <div
-        class="container mx-auto flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 lg:gap-10 pt-[7vh] md:pt-[20vh] lg:pt-0">
+        class="container mx-auto flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 lg:gap-10 pt-[15vh] md:pt-[20vh] lg:pt-0">
 
         <!-- Kiri -->
         <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6">
@@ -210,7 +207,7 @@
                         class="absolute -inset-0.5 bg-red-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000">
                     </div>
                     <div class="relative px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
-                        <span class="bg-white text-transparent bg-clip-text text-sm font-medium flex items-center">
+                        <span class="bg-white text-transparent bg-clip-text text-[2vw] lg:text-sm flex items-center">
                             Makanan Legendaris indonesia
                         </span>
                     </div>
@@ -236,7 +233,7 @@
             <div class="h-8 flex items-center justify-center lg:justify-start">
                 <span id="typing-text"
                     class="text-xl md:text-2xl bg-gradient-to-r from-[#D84315] to-[#eb592d] bg-clip-text text-transparent font-medium"></span>
-                <span class="w-[3px] h-6 bg-gradient-to-t from-[#fa6b0b] to-[#f35a01] ml-1 animate-blink"></span>
+                <span class="w-[3px] h-6 bg-gradient-to-t from-[#fa6b0b] to-[#f35a01] ml-1"></span>
             </div>
 
             <!-- Description -->
@@ -250,25 +247,23 @@
 
             <!-- Tech Stack -->
             <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <div class="w-[10vh] h-[10vh] overflow-hidden">
+                <a href="https://www.instagram.com/globalitibadung_?igsh=cXA5c3Uzd2dsY2Q5" target="_blank" class="w-[10vh] h-[10vh] overflow-hidden">
                     <img src="asset/logoti.png" class="w-full h-full p-3 object-contain">
-                </div>
+                </a>
                 <div class="w-[10vh] h-[10vh] overflow-hidden">
                     <img src="asset/garuda-pancasila.png" class="w-full h-full p-3 object-contain">
                 </div>
-                <div class="w-[10vh] h-[10vh] overflow-hidden">
+                <a href="https://www.instagram.com/osisglobalitibadung?igsh=amZqeW15YzhjMTI=" target="_blank" class="w-[10vh] h-[10vh] overflow-hidden">
                     <img src="asset/logoosis.png" class="w-full h-full p-3 object-contain">
-                </div>
+                </a>
             </div>
             <!-- CTA Buttons -->
             <div class="flex flex-row gap-3 w-full justify-center lg:justify-start mt-4">
-                <a href="#Portofolio"
-                    class="relative text-[3vw] py-1.5 px-3 lg:text-2xl flex items-center justify-center bg-orange-200 hover:bg-gradient-to-r hover:from-[#fa6b0b] to-[#f35a01] rounded-lg border border-white/10 text-white font-medium transition duration-300">
-                    <img src="asset/instagram.png" alt="Instagram" class="w-6 h-6 mr-2">KELAS
+                <a href="https://www.instagram.com/xquantumclass?igsh=MW1jY3czM24ycDFoMg==" target="_blank" class="relative text-[3vw] py-1.5 px-3 lg:text-2xl flex items-center justify-center bg-orange-200  hover:scale-110 hover:border-2 hover:border-amber-600 rounded-lg border border-white/10 text-white font-medium transition duration-300">
+                    <img src="asset/instagram.svg" alt="Instagram" class="w-6 h-6 mr-2">KELAS
                 </a>
-                <a href="#Contact"
-                    class="relative text-[3vw] lg:text-2xl py-1.5 px-3 flex items-center justify-center bg-orange-200 hover:bg-gradient-to-r hover:from-[#fa6b0b] to-[#f35a01] rounded-lg border border-white/10 text-white font-medium transition duration-300">
-                    <img src="asset/instagram.png" alt="Instagram" class="w-6 h-6 mr-2">DEVELOPER
+                <a href="https://www.instagram.com/sanjaya_pl?igsh=MTdqZG9leDBkbnB3Zg==" target="_blank" class="relative text-[3vw] lg:text-2xl py-1.5 px-3 flex items-center justify-center bg-orange-200 hover:scale-110 hover:border-2 hover:border-amber-600 rounded-lg border border-white/10 text-white font-medium transition duration-300">
+                    <img src="asset/instagram.svg" alt="Instagram" class="w-6 h-6 mr-2">DEVELOPER
                 </a>
             </div>
         </div>
@@ -285,7 +280,7 @@
                     pendahuluan
                 </h2>
             </div>
-            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-left"
+            <p class="mt-2 text-black max-w-[90vw] mx-auto text-base sm:text-lg" data-aos="fade-left"
                 data-aos-duration="800">
                 Pengertian, Pengakuan internasional & Filosofi Rendang
             </p>
@@ -296,7 +291,7 @@
             <!-- Image on the left -->
             <div class="w-full lg:w-[55%] flex justify-center lg:justify-start" data-aos="fade-right" data-aos-delay="500">
                 <img src="asset/rendang.png"
-                    class="w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-lg rotate-animation">
+                    class="w-[60vw] h-[60vw] lg:w-[500px] lg:h-[500px] object-cover rounded-lg rotate-animation">
             </div>
     
             <!-- Text content on the right -->
@@ -304,10 +299,10 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
                     Pengertian Rendang
                 </h3>                
-                <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <p class="text-black max-w-[85vw] text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
                     Rendang adalah masakan khas Minangkabau (Sumatera Barat, Indonesia) yang terdiri dari daging sapi yang dimasak perlahan dengan santan dan berbagai rempah-rempah hingga menghasilkan cita rasa yang kaya dan tekstur yang empuk. Proses memasaknya yang lama, biasanya 4-6 jam dengan api kecil, membuat rendang memiliki warna cokelat kehitaman dan tekstur yang kering.
                 </p>
-                <p class="text-black max-w-xl text-lg lg:text-2xl" data-aos="fade-left" data-aos-duration="1000">
+                <p class="text-black max-w-[85vw] text-lg lg:text-2xl" data-aos="fade-left" data-aos-duration="1000">
                     Rendang tidak hanya dikenal karena kelezatannya, tetapi juga karena daya tahannya yang lama. Jika dimasak hingga kering, rendang bisa bertahan selama berminggu-minggu bahkan berbulan-bulan tanpa bahan pengawet.
                 </p>
             </div>
@@ -318,10 +313,10 @@
             <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
                 Pengakuan Internasional Rendang
             </h3>                
-            <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+            <p class="text-black max-w-[85vw] text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
                 Rendang telah mendapatkan pengakuan sebagai salah satu makanan terenak di dunia. Beberapa penghargaan dan pengakuan internasional yang diraih rendang antara lain:
             </p>
-            <ul class="text-black list-inside list-decimal max-w-xl text-start text-lg lg:text-2xl mb-8 pl-5" data-aos="fade-left" data-aos-duration="1000">
+            <ul class="text-black list-inside list-decimal max-w-[85vw] text-start text-lg lg:text-2xl mb-8 pl-5" data-aos="fade-left" data-aos-duration="1000">
                 <li>CNN Travel menobatkan rendang sebagai makanan terenak di dunia pada tahun 2011 dan 2017 dalam daftar World’s 50 Best Foods.</li><br>
                 <li>Rendang sering muncul dalam berbagai festival kuliner internasional.</li><br>
                 <li>Menjadi menu andalan di banyak restoran Indonesia di luar negeri.</li><br>
@@ -361,10 +356,10 @@
             <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D84315] to-[#eb592d] mb-4 leading-tight" data-aos="fade-left" data-aos-duration="1000">
                 Filosofi Rendang dalam Masyarakat Minangkabau
             </h3>                
-            <p class="text-black max-w-xl text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
+            <p class="text-black max-w-[85vw] text-lg lg:text-2xl mb-8" data-aos="fade-left" data-aos-duration="1000">
                 Rendang bukan sekadar makanan, tetapi juga mencerminkan nilai-nilai sosial Minangkabau:
             </p>
-            <ul class="text-black list-inside text-start list-decimal max-w-xl text-lg lg:text-2xl mb-8 " data-aos="fade-left" data-aos-duration="1000">
+            <ul class="text-black list-inside text-start list-decimal max-w-[85vw] text-lg lg:text-2xl mb-8 " data-aos="fade-left" data-aos-duration="1000">
                 <li>Daging sapi → Melambangkan pemimpin adat.</li>
                 <li>Santan → Melambangkan kaum cendekiawan.</li>
                 <li>Cabai → Melambangkan ulama.</li>
@@ -381,7 +376,7 @@
                     Fakta Unik
                 </h2>
             </div>
-            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-up"
+            <p class="mt-2 text-black max-w-[90vw] mx-auto text-base sm:text-lg" data-aos="fade-up"
                 data-aos-duration="800">
                 Fakta fakta Unik tentang Rendang yang mungkin baru kamu tahu.
             </p>
@@ -396,7 +391,7 @@
     
             <!-- Text content on the right -->
             <div class="w-full flex flex-col items-center h-full text-center">             
-                <ul class="text-black list-inside text-start list-decimal max-w-xl lg:max-w-6xl text-lg lg:text-2xl mb-8 ">
+                <ul class="text-black list-inside text-start list-decimal max-w-[85vw] lg:max-w-6xl text-lg lg:text-2xl mb-8 ">
                 <li data-aos="fade-up" data-aos-duration="1000">Rendang Menjadi Makanan Terlezat di Dunia: Rendang dinobatkan sebagai makanan terlezat di dunia oleh CNN Travel dalam jajak pendapat "World’s 50 Best Foods" tahun 2011 dan 2017.</li><br>
                 <li data-aos="fade-up" data-aos-duration="1000">Rendang Membutuhkan Proses Memasak yang Panjang: Pembuatan rendang membutuhkan waktu 4–6 jam agar bumbu benar-benar meresap dan daging menjadi empuk dengan tekstur kering khas rendang asli</li><br>
                 <li data-aos="fade-up" data-aos-duration="1000">Rendang Memiliki Daya Tahan yang Luar Biasa: Karena dimasak dalam waktu yang lama hingga bumbu meresap sempurna, rendang bisa bertahan hingga berminggu-minggu bahkan berbulan-bulan tanpa bahan pengawet, jika disimpan dengan baik.</li><br>
@@ -414,7 +409,7 @@
                     Kesimpulan
                 </h2>
             </div>
-            <p class="mt-2 text-black max-w-2xl mx-auto text-base sm:text-lg" data-aos="fade-up"
+            <p class="mt-2 text-black max-w-[90vw] mx-auto text-base sm:text-lg" data-aos="fade-up"
                 data-aos-duration="800">
                 Terimakasih Sudah Mengunjungi Website Explorasi Rendang
             </p>
@@ -423,7 +418,7 @@
         <!-- Content Section -->
         <div class="w-full flex flex-col justify-between">
             <div class="w-full flex flex-col items-center h-full text-center">             
-                <p class="text-black list-inside list-decimal max-w-xl lg:max-w-6xl text-lg lg:text-2xl mb-8 " data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-black list-inside list-decimal max-w-[85vw] lg:max-w-6xl text-lg lg:text-2xl mb-8 " data-aos="fade-up" data-aos-duration="1000">
                     Rendang bukan hanya sekadar makanan lezat, tetapi juga bagian dari budaya Minangkabau yang sarat makna. Proses memasaknya yang unik, penggunaan rempah-rempah, serta daya tahannya yang lama menjadikan rendang sebagai ikon kuliner Indonesia yang mendunia.
                 </p>
             </div>
@@ -448,6 +443,37 @@
     <div id="grid"
         class="-z-10 inset-0 bg-[linear-gradient(to_right,#4f4f4f10_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f10_1px,transparent_1px)] bg-[size:24px_24px]">
     </div>
+    <section class="bg-white" data-aos="fade-up">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+            <form id="commentForm">
+                <div class="flex justify-center">
+                    <input type="text" class="p-2 border border-grey-light round text-grey-dark text-sm w-[40%] komentarinput" name="komentarinput" placeholder="Kirim Komentar" required>
+                    <button type="submit" class="bg-orange-500 text-white rounded-sm h-auto text-xs p-3">Kirim Komentar Anda</button>
+                </div>
+            </form>
+            <div class="flex justify-center mt-8 space-x-6">
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>                      
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                
+            </div>
+            <p class="mt-8 text-base leading-6 text-center text-gray-400">
+                &copy; 2025 Explorasi Rendang. All rights reserved.
+            </p>
+        </div>
+    </section>
     <script src="aos.js"></script>
     <script src="main.js"></script>
     <script type="module">
@@ -466,24 +492,33 @@
             src: "https://lottie.host/8230c49e-94ff-4e07-87ff-8988db8ff7dd/HAlKsEl0SD.lottie", // or .json file
         });
         </script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        blink: "blink 1s steps(2, start) infinite",
-                        float: "float 3s ease-in-out infinite",
-                    },
-                    keyframes: {
-                        blink: { "50%": { opacity: "0" } },
-                        float: {
-                            "0%, 100%": { transform: "translateY(0)" },
-                            "50%": { transform: "translateY(-5px)" }
-                        }
-                    }
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        const form = document.querySelector('form');
+        const komentarinput = document.querySelector('.komentarinput');
+
+        const serviceID = 'service_tfwuyzg';
+        const templateID = 'template_fucuqk9';
+        const publicKey = 'tVnf9yhASyAnLNUkV';
+
+        emailjs.init(publicKey);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inputData = {
+                komentar: komentarinput.value
+                
+            };
+            emailjs.send(serviceID, templateID, inputData).then(
+                () => {
+                    console.log('Success!');
+                },
+                (error) => {
+                    console.log(error);
                 }
-            }
-        };
+            );
+            komentarinput.value = '';
+        });
     </script>
 </body>
 </html>
