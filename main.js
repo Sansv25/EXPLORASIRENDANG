@@ -119,13 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
     updateBlobPosition();
 });
 
-const text = 'Website dibuat oleh Sanjaya';
+const text = 'Website dibuat oleh I Made Putra Sanjaya';
 let index = 0;
 function type() {
     if (index < text.length) {
         document.getElementById('welcome-info').textContent += text.charAt(index);
         index++;
-        setTimeout(type, 100); // Adjust typing speed here
+        setTimeout(type, 85); // Adjust typing speed here
     }
 };
 document.addEventListener("DOMContentLoaded", type);
