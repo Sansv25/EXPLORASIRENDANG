@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateBlobPosition();
 });
 
-const text = 'Website dibuat oleh I Made Putra Sanjaya';
+const text = 'Website Dibuat Oleh I Made Putra Sanjaya';
 let index = 0;
 function type() {
     if (index < text.length) {
